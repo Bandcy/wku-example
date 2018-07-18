@@ -1,0 +1,7 @@
+<div *ngIf="items.length < 1">No patients.</div>
+
+<ul *ngIf="items.length > 0">
+    <li *ngFor="let item of items">
+        <div>{{ item | json }}</div>
+    </li>
+</ul>
